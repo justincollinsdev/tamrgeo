@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry output="bin/main" kind="src" path="src/main/java">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry output="bin/test" kind="src" path="src/test/java">
+		<attributes>
+			<attribute name="gradle_scope" value="test"/>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry output="bin/test" kind="src" path="src/test/resources">
+		<attributes>
+			<attribute name="gradle_scope" value="test"/>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.locationtech.spatial4j/spatial4j/0.6/b24a8c55cd6244481bbd8c014bc95886d1f053a9/spatial4j-0.6-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.locationtech.spatial4j/spatial4j/0.6/21b15310bddcfd8c72611c180f20cf23279809a3/spatial4j-0.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.4.0/6c8bbb6dc869058053ba370d5f9699656e2bc93/junit-jupiter-engine-5.4.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.4.0/30083adf3fbd7b734f12e6cb4d99dedab99fc34b/junit-jupiter-engine-5.4.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.4.0/1c4c344124325ada996131e1ba8bbe26108a869f/junit-jupiter-api-5.4.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.4.0/1a09f25a160f71c267f9ebe3b229b17805c683e9/junit-jupiter-api-5.4.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/16.0.1/2477d012cd5379f9696e0d9d3ccc62ad13a09ca4/guava-16.0.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/16.0.1/5fa98cd1a63c99a44dd8d3b77e4762b066a5d0c5/guava-16.0.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.12.2/685240f44440706f41832ba4ff223204d3e9e06d/assertj-core-3.12.2-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.12.2/3c9724faa6090ab78a61d4e54011df72de2361c4/assertj-core-3.12.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.4.0/44fdbe60e0df90028edf59d9ffdf06d9fc0e43d9/junit-platform-engine-1.4.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.4.0/b4419dc190a5d82b9cac6b52e0af9140895c3f87/junit-platform-engine-1.4.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.4.0/12517867d09f09a4e829b80bfc958f69d883fc11/junit-platform-commons-1.4.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.4.0/e0b2ed8fac32ad6469d75d034e759f1969db8dda/junit-platform-commons-1.4.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.0.0/777508fa9f3e03cafb3c1fb2eba3dca317f4b1ee/apiguardian-api-1.0.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.0.0/3ef5276905e36f4d8055fe3cb0bdcc7503ffc85d/apiguardian-api-1.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.1.1/88a3a2cb15c413565462cea99f201b67bc6d2f10/opentest4j-1.1.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.1.1/efd9f971e91074491ea55b19f67b13470cf4fcdd/opentest4j-1.1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.geotools/gt-imageio-ext-gdal/21.0/b562e87e9fde64c5dceb8cbe3756d515685db117/gt-imageio-ext-gdal-21.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.geotools/gt-imageio-ext-gdal/21.0/500e71cc67a696b4716e2ef9b0a2a8973cca428/gt-imageio-ext-gdal-21.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.geotools/gt-coverage/21.0/128cdf3c2096dfc5424510e788de9820189fa669/gt-coverage-21.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.geotools/gt-coverage/21.0/1d430526e0d372a8ad3c52639eede0e1fc1a5c2b/gt-coverage-21.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.zonal/jt-zonal/1.1.7/f933c27e419b4228035252a7a3ccd77e95c31df0/jt-zonal-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.zonal/jt-zonal/1.1.7/9baf2106160c25762992199cdf69b447a900539c/jt-zonal-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.stats/jt-stats/1.1.7/804bf95e0f576e879ac0f938b0f4dc22f3745ca2/jt-stats-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.stats/jt-stats/1.1.7/efde41d65e2dd3bbe4e3c94dd8382db0ca0b2776/jt-stats-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/27.0-jre/d6484e2ee11ad928ccf61cf3e4ce9cedc2eead7e/guava-27.0-jre-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/27.0-jre/c6ad87d2575af8ac8ec38e28e75aefa882cc3a1f/guava-27.0-jre.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.noggit/noggit/0.8/5b56cc7f36ee1d2e2a6a50eabb1e32ff3ec2aca1/noggit-0.8-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.noggit/noggit/0.8/ba4ad65a62d7dfcf97a8d42c82ae7d8824f9087f/noggit-0.8.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/com.vividsolutions/jts/1.13/ee922fa0a39de08d193337739d336779e3dfa774/jts-1.13-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/com.vividsolutions/jts/1.13/3ccfb9b60f04d71add996a666ceb8902904fd805/jts-1.13.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.opengis/geoapi/2.3-M9/ac04330991eb35bdf5bbbe9aa7d31b88e8913a36/geoapi-2.3-M9-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.opengis/geoapi/2.3-M9/44afa18b95ef8db1e7f7d3bd0581f89870479cd5/geoapi-2.3-M9.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.geotools/gt-shapefile/21.0/306a3ee19e2279abf1b7f409fbd131037205a279/gt-shapefile-21.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.geotools/gt-shapefile/21.0/474a09117264cfdd497741d21e959fb034e87596/gt-shapefile-21.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.geotools/gt-main/21.0/4753f7cbbb5b9d8912746429b2211f021d50a5e3/gt-main-21.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.geotools/gt-main/21.0/1e2bb6bb697f95077c072902aad0cf50653e39c0/gt-main-21.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.geotools/gt-epsg-hsql/21.0/9faa6cbe2721a6077d87967f8b053c629ae2e1eb/gt-epsg-hsql-21.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.geotools/gt-epsg-hsql/21.0/c89bcf45ad97104d81525d453acc84595a6ec317/gt-epsg-hsql-21.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.geotools/gt-referencing/21.0/be04439d1fc2eb81313375791a5c5e3bee8b7de0/gt-referencing-21.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.geotools/gt-referencing/21.0/afb784291e1bd6fc58e57cdfec234f7658490942/gt-referencing-21.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/javax.measure/jsr-275/0.9.3/ab2fb094fc5297ae5636ef6ed0d6051d5a656588/jsr-275-0.9.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.jdom/jdom2/2.0.6/3dcf8ba7582eeac3b67ed5155ee3659e16c8dadc/jdom2-2.0.6-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.jdom/jdom2/2.0.6/6f14738ec2e9dd0011e343717fa624a10f8aab64/jdom2-2.0.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.geotools/gt-metadata/21.0/7220ce13014470978e6d62c70bd2f44428e79f92/gt-metadata-21.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.geotools/gt-metadata/21.0/2b1917a97d303cb863632bf0c3fc0b4bcf2b3df7/gt-metadata-21.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-tiff/1.2.1/5e1f0036fc2d918aa0aba865bdc28eae30e4ea84/imageio-ext-tiff-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-tiff/1.2.1/7ce30d66acc56ee4cb586fde59eda18af2277cb3/imageio-ext-tiff-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.affine/jt-affine/1.1.7/edf5767f3009a834759477db42fa2fb500b1c90f/jt-affine-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.affine/jt-affine/1.1.7/a53503563cba2edb52ec2abcd20ec0b62849f49/jt-affine-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.algebra/jt-algebra/1.1.7/49b74912a34bffe999700d78a5c168478474ffad/jt-algebra-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.algebra/jt-algebra/1.1.7/35d9182bcd8a602274913ff3e5a0411243e661fd/jt-algebra-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.bandmerge/jt-bandmerge/1.1.7/1d5a125714fadcdc72625fb284929b648b951ffd/jt-bandmerge-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.bandmerge/jt-bandmerge/1.1.7/443c2b056d3dffc9b541652b2ab63ecff4ef7435/jt-bandmerge-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.bandselect/jt-bandselect/1.1.7/812f662612fac3c8018fee04168aa85dfb193a02/jt-bandselect-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.bandselect/jt-bandselect/1.1.7/1f1ade6545ca2dd510a4c34fe0158446b441a888/jt-bandselect-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.bandcombine/jt-bandcombine/1.1.7/75c727a08958bb515eaaa39e10c6ee0b002b31d2/jt-bandcombine-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.bandcombine/jt-bandcombine/1.1.7/a38db7c8393d0788f9de5dac14f86278ece62cf/jt-bandcombine-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.warp/jt-warp/1.1.7/1e6bb9912acf4e63f33f528d171443a8837b7be8/jt-warp-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.warp/jt-warp/1.1.7/b10e3c1e50113b2a95bddb665fb6e2ff862a8f70/jt-warp-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.format/jt-format/1.1.7/77753770c561e7aa28a7bceb0f749ac4ca79d374/jt-format-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.format/jt-format/1.1.7/76aa673910de61465f09cf37eb099ce22042ef2e/jt-format-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.border/jt-border/1.1.7/6bdea7bd8cbb4f720720181c90cccec75604febe/jt-border-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.border/jt-border/1.1.7/241133f41a8c11543b426742c31080817200946/jt-border-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.buffer/jt-buffer/1.1.7/1386c5b65be2f1b97b590c4b5ae95ac03105f656/jt-buffer-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.buffer/jt-buffer/1.1.7/f30806d4cf4bcd8cadcfc4b07dd7e59448aec14a/jt-buffer-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.crop/jt-crop/1.1.7/128b4ac9f5260ff6f8c9f3e1b2b8ffbcce829bc7/jt-crop-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.crop/jt-crop/1.1.7/3ed09ee31ec27be83633f60a2018c65c8a157c7b/jt-crop-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.mosaic/jt-mosaic/1.1.7/8a0614ccbb5a81c3d0398ae3431c08eaffde1690/jt-mosaic-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.mosaic/jt-mosaic/1.1.7/e2eefec0f98c0ef50d127e6f948bd719e6c61381/jt-mosaic-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.lookup/jt-lookup/1.1.7/d0d7cb1d6dd6b43752506f28e8d1e0fb397afeaa/jt-lookup-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.lookup/jt-lookup/1.1.7/82c2431592cf4d6a41f262c6af5cd9efc5ae74d6/jt-lookup-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.nullop/jt-nullop/1.1.7/d1600b0b65780053a7cd87e0c41e377c0e789416/jt-nullop-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.nullop/jt-nullop/1.1.7/8f4b39926977e6e1cb97f30476767580bee54e2e/jt-nullop-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.rescale/jt-rescale/1.1.7/c175ae1c9e9b17b60fabfa1c3bc067e14c6d406f/jt-rescale-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.rescale/jt-rescale/1.1.7/e4141224c579d5dd139bd94dedb4f869bf527f3b/jt-rescale-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.scale/jt-scale/1.1.7/a1b7978d17bd94e8f482242450b9fefe48e07e8/jt-scale-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.scale/jt-scale/1.1.7/1488877b82af74f2ae28efa3781d09c946132bab/jt-scale-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.scale2/jt-scale2/1.1.7/e8c9cd2cec342a18be27735db07674c78dfd6ca9/jt-scale2-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.scale2/jt-scale2/1.1.7/2effbd8d6feef5dd790fcf39670d117e003b1923/jt-scale2-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.translate/jt-translate/1.1.7/d6a3f84270083043c8c6a69a42982926b9b26e56/jt-translate-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.translate/jt-translate/1.1.7/e10dfac41af91054bcaba89f6024950a60fa75fc/jt-translate-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.binarize/jt-binarize/1.1.7/b2b2ad3f291e6bc15766f37a7237f598af028207/jt-binarize-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.binarize/jt-binarize/1.1.7/adc4ced750ad8bd7580e880dbff745ff142258a4/jt-binarize-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.colorconvert/jt-colorconvert/1.1.7/7188b207fe4fb6101fd809707fcba44def719619/jt-colorconvert-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.colorconvert/jt-colorconvert/1.1.7/3f3588100747f77cca57d23e447a14ff84398b27/jt-colorconvert-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.errordiffusion/jt-errordiffusion/1.1.7/d503a05db55867f5f01ea20c93ec6c32d698f90d/jt-errordiffusion-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.errordiffusion/jt-errordiffusion/1.1.7/23bd74829ce26d2779de404d066abfae2ec8a694/jt-errordiffusion-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.orderdither/jt-orderdither/1.1.7/d78e8ac67acb03063194b8eb68fbea9bc1d68b61/jt-orderdither-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.orderdither/jt-orderdither/1.1.7/3c4244ad36b439854e3c445bdad17a348ee64641/jt-orderdither-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.colorindexer/jt-colorindexer/1.1.7/845a96c6b9ffc936ff04d0607ae7ed4c41d4e76c/jt-colorindexer-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.colorindexer/jt-colorindexer/1.1.7/cb5ba7b882dac2da8cab0f8dee36cb57350b6ec1/jt-colorindexer-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.imagefunction/jt-imagefunction/1.1.7/1dc083e654321d1103ca6361e105273f75f1e73e/jt-imagefunction-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.imagefunction/jt-imagefunction/1.1.7/13fbb8503d0724abc196ddbd2ac5b76a680e32/jt-imagefunction-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.classifier/jt-classifier/1.1.7/62ec1f6df5973daa39c10c06d282735b0977aa87/jt-classifier-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.classifier/jt-classifier/1.1.7/7a64976dc0e54655e178642d6ee136d30ffa92ef/jt-classifier-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.piecewise/jt-piecewise/1.1.7/1d64fd5b6f4f9fceb31b8a280fc5560de5afae9b/jt-piecewise-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.piecewise/jt-piecewise/1.1.7/8d2c41d557dd16a7fde8063d21a8134c382e078a/jt-piecewise-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.rlookup/jt-rlookup/1.1.7/ffb132a3b83470ecf4321b72883b1393b3ae77a2/jt-rlookup-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.rlookup/jt-rlookup/1.1.7/2b2d5091ce2ed7a29e56cb964c96bb1fc7c973fa/jt-rlookup-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.vectorbin/jt-vectorbin/1.1.7/8fec7dacf0c4d89f4edde2ea478c09631ddee8ad/jt-vectorbin-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.vectorbin/jt-vectorbin/1.1.7/5cc7c422f72d8e7983e367e932e3f59f87a5e699/jt-vectorbin-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.shadedrelief/jt-shadedrelief/1.1.7/3771fb70681e886756510fb9013128bdaba7bf8c/jt-shadedrelief-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.shadedrelief/jt-shadedrelief/1.1.7/3dd59205033180ed6814bd640ccb22f7420acc21/jt-shadedrelief-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalarcbinarygrid/1.2.1/8ee3553171e0f6c6d72054486166ccc88de9d612/imageio-ext-gdalarcbinarygrid-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalarcbinarygrid/1.2.1/8b692858856d446a1780d0f7d944391cb56482bf/imageio-ext-gdalarcbinarygrid-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalmrsid/1.2.1/594e7700ad250fb6b562791324c82264ce6383d2/imageio-ext-gdalmrsid-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalmrsid/1.2.1/a3142695a8032743400d403c3be9d2a8e7934db9/imageio-ext-gdalmrsid-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalecw/1.2.1/e3346aa766ff15a22d098626f6a92b9044d937f0/imageio-ext-gdalecw-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalecw/1.2.1/c68b851a0a980faa36d330931858c0b8713fd11c/imageio-ext-gdalecw-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdaldted/1.2.1/c72f285874949b55d46c5273b86953be608c5e9c/imageio-ext-gdaldted-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdaldted/1.2.1/94ca8391beada638d826fdeadf06eaf235b54828/imageio-ext-gdaldted-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalkakadujp2/1.2.1/f701b7a6fdb6b4274d6e4b2fcfd8658562e9a297/imageio-ext-gdalkakadujp2-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalkakadujp2/1.2.1/f71436064f3f41ab5e28193d046dd6da2ecbce7b/imageio-ext-gdalkakadujp2-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalmrsidjp2/1.2.1/7eb9ad980c811f9bb399256be501e9f80748897a/imageio-ext-gdalmrsidjp2-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalmrsidjp2/1.2.1/be7bb2ec76198b30957d2152e1af220b9cbab68/imageio-ext-gdalmrsidjp2-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalecwjp2/1.2.1/fc2d3e1c14f81818b0872bd03d5e23f9fff26af8/imageio-ext-gdalecwjp2-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalecwjp2/1.2.1/53cc05fee77683a144bb5bcd1f3007ad44e82701/imageio-ext-gdalecwjp2-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalehdr/1.2.1/856c53f3ac5eec2c05e33b7e1682e7ca2923b5e4/imageio-ext-gdalehdr-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalehdr/1.2.1/321916ec24014fc1c2679dd613d8e0439ee7bd40/imageio-ext-gdalehdr-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalenvihdr/1.2.1/4b63d4ade5275bd6edacc8474209ecd7751be7ea/imageio-ext-gdalenvihdr-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalenvihdr/1.2.1/ac37d18a1a13e2bd6ac13da7022e53fa0ef7e638/imageio-ext-gdalenvihdr-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalerdasimg/1.2.1/4e9d8b2b7e5c71aefb6750462edbe343d9cfe1e9/imageio-ext-gdalerdasimg-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalerdasimg/1.2.1/5b3820360287d0bf337ad12aca91634bf81d5f7c/imageio-ext-gdalerdasimg-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalnitf/1.2.1/85c9a1f9d56e3eac0919dd0e045d4075d10862f4/imageio-ext-gdalnitf-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalnitf/1.2.1/65270795b18fd92a4ec74e56ffb7e8cdd94e0c33/imageio-ext-gdalnitf-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalrpftoc/1.2.1/5b5bd16b43b1554702fadfffe8fefda6f08cb3a5/imageio-ext-gdalrpftoc-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalrpftoc/1.2.1/347c8ce926836a6b4cde20319122c7e552b60469/imageio-ext-gdalrpftoc-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalidrisi/1.2.1/8bc8b9dcdfefda78432df8bd418540e1059d1da2/imageio-ext-gdalidrisi-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalidrisi/1.2.1/261da4c3ca80e41a9c0433d4d8ab0cbd8ad13af0/imageio-ext-gdalidrisi-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalvrt/1.2.1/f7dfb2cbc239124f1ee686dadbd528f752a5f0ac/imageio-ext-gdalvrt-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalvrt/1.2.1/2f0703a5fa806e2345117ca3b7c6430f413b36bd/imageio-ext-gdalvrt-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalsrp/1.2.1/b2b61c3f4462f6fbecb9c163f085f92936950482/imageio-ext-gdalsrp-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalsrp/1.2.1/75bd7e876f7aad03aaf17b09a48d15e85e16139d/imageio-ext-gdalsrp-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-imagereadmt/1.2.1/4ab2ac87e5cdb4d33d1c07db4f7208c4ccb63fef/imageio-ext-imagereadmt-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-imagereadmt/1.2.1/fe78481b05309b2b8ba3c245cc479120188ebaf5/imageio-ext-imagereadmt-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.geotools/gt-opengis/21.0/8356806b0454d935a4ff06495127502723110edb/gt-opengis-21.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.geotools/gt-opengis/21.0/ac31ef6a4e81b878ffd4e8ec6e01bfe84c3cb68f/gt-opengis-21.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalframework/1.2.1/69c7ef7b26ffa0188808c0512c67f43b07e860f2/imageio-ext-gdalframework-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdalframework/1.2.1/7ea042847050cd5ce41bc8ba2dc99afcbeaef1b3/imageio-ext-gdalframework-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-geocore/1.2.1/1c60bf0772773962995ca0264e096d5c6021735/imageio-ext-geocore-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-geocore/1.2.1/82d84dfec2e70d513066cb9719ccbd664a9da67c/imageio-ext-geocore-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-streams/1.2.1/315eb010cef9fbeada0ad1cac05330ad88600f05/imageio-ext-streams-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-streams/1.2.1/67201cab34b7a245b1ebfca13266ee506b7c76ff/imageio-ext-streams-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-utilities/1.2.1/b8a6ff81b1a38428f093593bd7afd13c2cc1fc1b/imageio-ext-utilities-1.2.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-utilities/1.2.1/4cae24e4a63ad3e75f3ffa1f808e79c5257d564e/imageio-ext-utilities-1.2.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.utilities/jt-utilities/1.1.7/f0f61cfaec3456683304dccd3ae5c221668daae8/jt-utilities-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.utilities/jt-utilities/1.1.7/1bfda0677363284e3265d9ca0295ebae5f753cd/jt-utilities-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.iterators/jt-iterators/1.1.7/7368e8fea38a45aaa44adc05a324b9b54718f8f7/jt-iterators-1.1.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.jaiext.iterators/jt-iterators/1.1.7/2d5ba0f997792ca402825d8dee6e272e7e7c8b7/jt-iterators-1.1.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.ejml/ejml-ddense/0.34/cac7f5af1068f0654c8b2a864caa510cf062f4f0/ejml-ddense-0.34-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.ejml/ejml-ddense/0.34/28b1a589c963ab43283646c8a1b2749c6a6f20ff/ejml-ddense-0.34.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/commons-pool/commons-pool/1.5.4/3e226507788e09f02eef641e868624fb823af6e6/commons-pool-1.5.4-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/commons-pool/commons-pool/1.5.4/75b6e20c596ed2945a259cea26d7fadd298398e6/commons-pool-1.5.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/net.sf.geographiclib/GeographicLib-Java/1.49/7492f34e181ceb6648c90c6a34109711b729c084/GeographicLib-Java-1.49-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/net.sf.geographiclib/GeographicLib-Java/1.49/7ff2164e69fa04e1ef2ca5079e1cee298a936ea1/GeographicLib-Java-1.49.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.jaitools/jt-zonalstats/1.5.0/191a77e1e92bcbe320a99eb27aa8c183e7b5b61a/jt-zonalstats-1.5.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.jaitools/jt-zonalstats/1.5.0/d900601ed0971a9f27a5d6c1f42f8eb10290038f/jt-zonalstats-1.5.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.jaitools/jt-utils/1.5.0/f0d0a87cdf8257334d550da0e774d49adfaf9687/jt-utils-1.5.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.jaitools/jt-utils/1.5.0/d0df114789b3616a8f38502e8ffce6118810fcc0/jt-utils-1.5.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.locationtech.jts/jts-core/1.16.0/bb7197402ffdc6edb8f56ea1be8e19387c9aecb4/jts-core-1.16.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.locationtech.jts/jts-core/1.16.0/dd852eb51b92eec108415c0ce624a65d99d0daae/jts-core-1.16.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/javax.media/jai_imageio/1.1/27d867283f9043b05a8fb210773d0ef72b767a58/jai_imageio-1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.6/2566800dc841d9d2c5a0d34d807e45d4107dbbdf/commons-io-2.6-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.6/815893df5f31da2ece4040fe0a12fd44b577afaf/commons-io-2.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-text/1.6/537f45636348da7c83861c537ec5ebb36933f5f4/commons-text-1.6-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-text/1.6/ba72cf0c40cf701e972fe7720ae844629f4ecca2/commons-text-1.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.ejml/ejml-core/0.34/8bb529bdec487595c7eb268fe2fc424939ea9d7c/ejml-core-0.34-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.ejml/ejml-core/0.34/4bee8166d7ec00dcc8516385c302d68d947db4c9/ejml-core-0.34.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.8.1/e9748d7783594da3735ad9724390a10e7cebc01d/commons-lang3-3.8.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.8.1/6505a72a097d9270f7a9e7bf42c4238283247755/commons-lang3-3.8.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/javax.media/jai_codec/1.1.3/34a67ba62097778e4695c951156bf189c2c8e016/jai_codec-1.1.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.hsqldb/hsqldb/2.4.1/39b5e7e988c00331083aaf9231ca4e4fb00ac70d/hsqldb-2.4.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.hsqldb/hsqldb/2.4.1/9daff99b4fbd6809fd46ab4327650ad00a1be6d4/hsqldb-2.4.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/systems.uom/systems-common-java8/0.7.2/a3be3677ec2338fe81ba4bba4a93ee3b589dfc12/systems-common-java8-0.7.2-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/systems.uom/systems-common-java8/0.7.2/4c38e34c0b93d1fbd1497e6fc0ed5d3b26fbdb75/systems-common-java8-0.7.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.4.0-b180830.0438/ed594715cb39278fca6f8a209e2a475ed36d9982/jaxb-runtime-2.4.0-b180830.0438-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.4.0-b180830.0438/2a0705ce8aa988b691c70e8bdcc1613050a148a2/jaxb-runtime-2.4.0-b180830.0438.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.4.0-b180830.0359/76eeee760b97819cb6fd6e3dd24df05ebbe6f9f8/jaxb-api-2.4.0-b180830.0359-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.4.0-b180830.0359/b54184b7dcab2031add3f525550c7f1b7e12209d/jaxb-api-2.4.0-b180830.0359.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/javax.activation/javax.activation-api/1.2.0/1b4c6e77d35adab19794746d8ea753df30d77dca/javax.activation-api-1.2.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/javax.activation/javax.activation-api/1.2.0/85262acf3ca9816f9537ca47d5adeabaead7cb16/javax.activation-api-1.2.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0/1e90402881010c96ea5e4b7e6f56acb283e78db3/failureaccess-1.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0/50bacb0bdbbeeda25142aff57e2214c402e1193c/failureaccess-1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/b19b5927c2c25b6c70f093767041e641ae0b1b35/jsr305-3.0.2-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/2.5.2/ebb8ebccd42218434674f3e1d9022c13df1c19f8/checker-qual-2.5.2-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/2.5.2/cea74543d5904a30861a61b4643a5f2bb372efc4/checker-qual-2.5.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.2.0/a8cd7823aa1dcd2fd6677c0c5988fdde9d1fb0a3/error_prone_annotations-2.2.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.2.0/88e3c593e9b3586e1c6177f89267da6fc6986f0c/error_prone_annotations-2.2.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/1efdf5b737b02f9b72ebdec4f72c37ec411302ff/j2objc-annotations-1.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/ed28ded51a8b1c6b112568def5f4b455e6809019/j2objc-annotations-1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.17/8fb5b5ad9c9723951b9fccaba5bb657fa6064868/animal-sniffer-annotations-1.17-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.17/f97ce6decaea32b36101e37979f8b647f00681fb/animal-sniffer-annotations-1.17.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/it.geosolutions.imageio-ext/imageio-ext-gdal-bindings/1.9.2/a0ac16a42027a4065d3d763c2ecfcca4980b1bfb/imageio-ext-gdal-bindings-1.9.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/si.uom/si-units-java8/0.7.1/43d6d7cd0582db21bb479db6741193e676437939/si-units-java8-0.7.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/si.uom/si-units-java8/0.7.1/2c415ef9cdb26ad05d8d9148b0616c7e90f2acac/si-units-java8-0.7.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/tec.uom/uom-se/1.0.8/18f3e93adf2e09ed507186087e41f45d542cfb7c/uom-se-1.0.8-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/tec.uom/uom-se/1.0.8/5dc017f18b7f33ef090405cb59f89bbf9a03cfd5/uom-se-1.0.8.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/si.uom/si-quantity/0.7.1/8eb686c8c7edd597e33b0ce8fc008d03193cbfdc/si-quantity-0.7.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/si.uom/si-quantity/0.7.1/fbd76ad7820340b96608cb34cfa940d119be3f0b/si-quantity-0.7.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/2.4.0-b180830.0438/63cadadfbc01dec9dca0dc72dd45ed20091e5a5e/txw2-2.4.0-b180830.0438-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/2.4.0-b180830.0438/31bae7fb5924472b3243b265b47cb741da715419/txw2-2.4.0-b180830.0438.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/3.0.7/c899ff66b36c0cf814b3996d5dd9aa6b4684212c/istack-commons-runtime-3.0.7-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/3.0.7/c197c86ceec7318b1284bffb49b54226ca774003/istack-commons-runtime-3.0.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.jvnet.staxex/stax-ex/1.8/bd2cfcaffb7feaecc7632191563f6beb91f2fd30/stax-ex-1.8-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.jvnet.staxex/stax-ex/1.8/8cc35f73da321c29973191f2cf143d29d26a1df7/stax-ex-1.8.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/com.sun.xml.fastinfoset/FastInfoset/1.2.15/2679fa1855aebe1a48e4ec6928eafe7d261bf228/FastInfoset-1.2.15-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/com.sun.xml.fastinfoset/FastInfoset/1.2.15/bb7b7ec0379982b97c62cd17465cb6d9155f68e8/FastInfoset-1.2.15.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/tec.uom.lib/uom-lib-common/1.0.2/f22cfbafab9e465f26e96244f536e585b69a85c0/uom-lib-common-1.0.2-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/tec.uom.lib/uom-lib-common/1.0.2/7159c464e682dd273902b3a3f32967a881e9193b/uom-lib-common-1.0.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/javax.measure/unit-api/1.0/8d60af295fc95714c210c795ce63b48b9d183213/unit-api-1.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/javax.measure/unit-api/1.0/6b960260278588d7ff02fe376e5aad39a9c7440b/unit-api-1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+</classpath>

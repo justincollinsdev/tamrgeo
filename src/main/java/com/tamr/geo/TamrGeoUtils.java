@@ -31,6 +31,10 @@ public class TamrGeoUtils {
 		writer = ctx.getFormats().getWriter(ShapeIO.GeoJSON);
 
 	}
+	
+	public SpatialContext getSpatialContext() {
+		return ctx;
+	}
 
 	public Shape fromGeoJson(String geoJsonString) throws InvalidShapeException, IOException, ParseException {
 		return reader.read(geoJsonString);
@@ -40,7 +44,7 @@ public class TamrGeoUtils {
 		return writer.toString(shape);
 	}
 
-	public Point getPolygonCentroid(Shape geometry) {
+	public Point getCentroid(Shape geometry) {
 		return geometry.getCenter();
 	}
 
@@ -57,13 +61,21 @@ public class TamrGeoUtils {
 		}
 		return false;
 	}
+	
+//	public Shape overlay(Shape p1, Shape p2) {
+//		p1.
+//	}
 
 	public double calculateArea(Shape geometry) {
 		double squareRadians = geometry.getArea(ctx);
 		// this isn't correct, but it's a reasonable approximation and close enough for
 		// now.  The correct way to do it is to reproject using calcArea below.
 		// That brings in a lot of dependencies though, it may not be worth the added complexity.
-		return Math.toRadians(squareRadians) * 6371000 * 100000;
+
+		//To convert these degrees to meters, note that the radius of a sphere whose area is equal 
+		//to that of the earth's ellipsoidal surface (an authalic sphere) is 6371 km, giving 
+		//111,194.9 meters per degree. 
+		return Math.toRadians(squareRadians) * 6371000 * 111194.9;
 	}
 
 	
