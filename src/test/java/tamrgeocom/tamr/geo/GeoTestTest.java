@@ -111,7 +111,7 @@ class GeoTestTest {
 
 		double centroidDifference = gu.calculateDistance(bldg1Centroid, bldg2Centroid);
 		double change = Math.abs((centroidDifference - ACTUAL_DISTANCE_BTWN_HUMAN_ML_CENTROIDS))/ACTUAL_DISTANCE_BTWN_HUMAN_ML_CENTROIDS;
-		//these two area SO close together that even rounding error makes for higher percentage defiance.
+		//these two values are SO close together that even rounding error makes for higher percentage defiance.
 		//there is only 1.2 cm between these two values, but that's .32%, slightly above the nominal .3%
 		assertTrue(change < .0035);
 	}
@@ -212,6 +212,20 @@ class GeoTestTest {
 		String resultGeoJson = gu.toGeoJson(shapeFromGeoJson);
 		Shape resultFromGeoJsonWrite = gu.fromGeoJson(resultGeoJson);
 		assertEquals(gu.calculateArea(shapeFromGeoJson), gu.calculateArea(resultFromGeoJsonWrite));
+	}
+	
+	@Test
+	void testIntersectionArea() throws Exception {
+		TamrGeoUtils gu = new TamrGeoUtils();
+		String bldg1JsonString = readFile("uShapedHumanGeneratedBuilding.json");
+		Shape bldg1Shape = gu.fromGeoJson(bldg1JsonString);
+		String bldg2JsonString = readFile("uShapedMLGeneratedBuilding.json");
+		Shape bldg2Shape = gu.fromGeoJson(bldg2JsonString);
+		double intersectArea = gu.getIntersectionArea(bldg1Shape, bldg2Shape);
+		System.out.println("intersectionArea is "+intersectArea);
+		System.out.println("s1 area is "+gu.calculateArea(bldg1Shape));
+		System.out.println("s2 area is "+gu.calculateArea(bldg2Shape));
+	
 	}
 
 	static String readFile(final String fileName) throws IOException {

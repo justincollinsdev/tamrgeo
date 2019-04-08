@@ -14,18 +14,23 @@ import org.locationtech.spatial4j.io.ShapeWriter;
 import org.locationtech.spatial4j.shape.Point;
 import org.locationtech.spatial4j.shape.Shape;
 import org.locationtech.spatial4j.shape.SpatialRelation;
+import org.locationtech.spatial4j.shape.jts.JtsGeometry;
+import org.locationtech.spatial4j.shape.jts.JtsShapeFactory;
+
+import com.vividsolutions.jts.geom.Geometry;
 
 public class TamrGeoUtils {
 
 	private ShapeReader reader = null;
 	private ShapeWriter writer = null;
 	private SpatialContext ctx = null;
+	JtsSpatialContextFactory scFactory = null;
 
 	public TamrGeoUtils() {
-		SpatialContextFactory factory = new JtsSpatialContextFactory();
-		factory.geo = true;
-		factory.distCalc = new GeodesicSphereDistCalc.Haversine();
-		ctx = factory.newSpatialContext();
+		scFactory = new JtsSpatialContextFactory();
+		scFactory.geo = true;
+		scFactory.distCalc = new GeodesicSphereDistCalc.Haversine();
+		ctx = scFactory.newSpatialContext();
 
 		reader = ctx.getFormats().getReader(ShapeIO.GeoJSON);
 		writer = ctx.getFormats().getWriter(ShapeIO.GeoJSON);
@@ -62,60 +67,28 @@ public class TamrGeoUtils {
 		return false;
 	}
 	
-//	public Shape overlay(Shape p1, Shape p2) {
-//		p1.
-//	}
 
 	public double calculateArea(Shape geometry) {
 		double squareRadians = geometry.getArea(ctx);
 		// this isn't correct, but it's a reasonable approximation and close enough for
-		// now.  The correct way to do it is to reproject using calcArea below.
-		// That brings in a lot of dependencies though, it may not be worth the added complexity.
+		// now.  Nominal accuracy of .3%
 
-		//To convert these degrees to meters, note that the radius of a sphere whose area is equal 
-		//to that of the earth's ellipsoidal surface (an authalic sphere) is 6371 km, giving 
-		//111,194.9 meters per degree. 
+		// To convert square degrees to meters, note that the radius of a sphere whose area is equal 
+		// to that of the earth's ellipsoidal surface (an authalic sphere) is 6371 km, giving 
+		// 111,194.9 meters per degree. 
 		return Math.toRadians(squareRadians) * 6371000 * 111194.9;
 	}
-
 	
-	/*
-	 * This is the real way to do the calculate area (and there is an analogous
-	 * version of distance). The trade off is you get to pull in all the geotools
-	 * libraries with about 100 transitive dependencies. Including here for
-	 * reference and discussion.
-	 * 
-	 * additional repos needed:
-	 * 
-	 * maven { 
-	 *     url "http://maven.geotoolkit.org/" 
-	 * } 
-	 * maven { 
-	 *     url "http://repo.boundlessgeo.com/main/" 
-	 * }
-	 *
-	 * additional dependencies (there is a 22-SNAPSHOT available too): 
-	 * testRuntime('org.geotools:gt-shapefile:21.0')
-	 * testRuntime('org.geotools:gt-referencing:21.0')
-	 * testRuntime('org.geotools:gt-coverage:21.0')
-	 * 
-	 */
-//	private Measure<Double, Area> calcArea(SimpleFeature feature) {
-//	    Polygon p = (Polygon) feature.getDefaultGeometry();
-//	    Point centroid = p.getCentroid();
-//	    try {
-//	      String code = "AUTO:42001," + centroid.getX() + "," + centroid.getY();
-//	      CoordinateReferenceSystem auto = CRS.decode(code);
-//
-//	      MathTransform transform = CRS.findMathTransform(DefaultGeographicCRS.WGS84, auto);
-//
-//	      Polygon projed = (Polygon) JTS.transform(p, transform);
-//	      return Measure.valueOf(projed.getArea(), SI.SQUARE_METRE);
-//	    } catch (MismatchedDimensionException | TransformException | FactoryException e) {
-//	      // TODO Auto-generated catch block
-//	      e.printStackTrace();
-//	    }
-//	    return Measure.valueOf(0.0, SI.SQUARE_METRE);
-//	  }
+	public double getIntersectionArea(Shape s1, Shape s2) {
+		JtsShapeFactory shapeFactory = (JtsShapeFactory)scFactory.makeShapeFactory(ctx);
+		Geometry s1Geo = shapeFactory.getGeometryFrom(s1);
+		Geometry s2Geo = shapeFactory.getGeometryFrom(s2);
+		Geometry intersection = s1Geo.intersection(s2Geo);
+		Shape resultShape = shapeFactory.makeShape(intersection);
+		return calculateArea(resultShape);
+	}
+	
+	
+	
 
 }
