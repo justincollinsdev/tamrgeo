@@ -237,10 +237,6 @@ class GeoTestTest {
 		Shape bldg2Shape = gu.fromGeoJson(bldg2JsonString);
 		double hausdorffSimilarity= gu.getHausdorffSimilarity(bldg1Shape, bldg2Shape);
 		assertTrue(hausdorffSimilarity < .94 && hausdorffSimilarity >.92);
-		System.out.println("HausdorffSimilarity is "+hausdorffSimilarity);
-		System.out.println("s1 area is "+gu.calculateArea(bldg1Shape));
-		System.out.println("s2 area is "+gu.calculateArea(bldg2Shape));
-	
 	}
 	
 	@Test
