@@ -88,7 +88,16 @@ public class TamrGeoUtils {
 		return calculateArea(resultShape);
 	}
 	
-	
+	public double getHausdorffSimilarity(Shape s1, Shape s2) {
+		JtsShapeFactory shapeFactory = (JtsShapeFactory)scFactory.makeShapeFactory(ctx);
+		Geometry s1Geo = shapeFactory.getGeometryFrom(s1);
+		Geometry s2Geo = shapeFactory.getGeometryFrom(s2);
+		Geometry intersection = s1Geo.intersection(s2Geo);
+		Shape resultShape = shapeFactory.makeShape(intersection);
+		HausdorffSimilarityMeasure hausdorffSimilarityMeasure = new HausdorffSimilarityMeasure();
+		double result = hausdorffSimilarityMeasure.measure(s1Geo, s2Geo);
+		return calculateArea(resultShape);
+	}
 	
 
 }

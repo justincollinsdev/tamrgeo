@@ -19,9 +19,6 @@ repositories {
     maven {
         url "http://maven.geotoolkit.org/"
     }
-    maven {
-        url "http://repo.boundlessgeo.com/main/"
-    }
 }
 dependencies {
     compile group: 'org.locationtech.spatial4j', name: 'spatial4j', version: '0.6'
@@ -31,11 +28,6 @@ dependencies {
     compile('org.assertj:assertj-core:3.12.2')
     testRuntime('org.noggit:noggit:0.8')
     testRuntime('com.vividsolutions:jts:1.13')
-    testRuntime('org.opengis:geoapi:2.3-M9')
-    testRuntime('org.geotools:gt-shapefile:21.0')
-    testRuntime('org.geotools:gt-referencing:21.0')
-    testRuntime('org.geotools:gt-coverage:21.0')
-    testRuntime('org.geotools:gt-imageio-ext-gdal:21.0')
 }
 test {
     useJUnitPlatform()
