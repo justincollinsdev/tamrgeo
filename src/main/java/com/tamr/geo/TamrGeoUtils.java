@@ -17,6 +17,7 @@ import org.locationtech.spatial4j.shape.SpatialRelation;
 import org.locationtech.spatial4j.shape.jts.JtsGeometry;
 import org.locationtech.spatial4j.shape.jts.JtsShapeFactory;
 
+import com.vividsolutions.jts.algorithm.match.HausdorffSimilarityMeasure;
 import com.vividsolutions.jts.geom.Geometry;
 
 public class TamrGeoUtils {
@@ -92,11 +93,8 @@ public class TamrGeoUtils {
 		JtsShapeFactory shapeFactory = (JtsShapeFactory)scFactory.makeShapeFactory(ctx);
 		Geometry s1Geo = shapeFactory.getGeometryFrom(s1);
 		Geometry s2Geo = shapeFactory.getGeometryFrom(s2);
-		Geometry intersection = s1Geo.intersection(s2Geo);
-		Shape resultShape = shapeFactory.makeShape(intersection);
 		HausdorffSimilarityMeasure hausdorffSimilarityMeasure = new HausdorffSimilarityMeasure();
-		double result = hausdorffSimilarityMeasure.measure(s1Geo, s2Geo);
-		return calculateArea(resultShape);
+		return hausdorffSimilarityMeasure.measure(s1Geo, s2Geo);
 	}
 	
 
