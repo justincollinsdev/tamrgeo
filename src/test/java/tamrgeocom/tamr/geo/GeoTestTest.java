@@ -227,6 +227,32 @@ class GeoTestTest {
 		System.out.println("s2 area is "+gu.calculateArea(bldg2Shape));
 	
 	}
+	
+	@Test
+	void testHausdorffSimilarityMLvsHumanBuilding() throws Exception {
+		TamrGeoUtils gu = new TamrGeoUtils();
+		String bldg1JsonString = readFile("uShapedHumanGeneratedBuilding.json");
+		Shape bldg1Shape = gu.fromGeoJson(bldg1JsonString);
+		String bldg2JsonString = readFile("uShapedMLGeneratedBuilding.json");
+		Shape bldg2Shape = gu.fromGeoJson(bldg2JsonString);
+		double hausdorffSimilarity= gu.getHausdorffSimilarity(bldg1Shape, bldg2Shape);
+		assertTrue(hausdorffSimilarity < .94 && hausdorffSimilarity >.92);
+		System.out.println("HausdorffSimilarity is "+hausdorffSimilarity);
+		System.out.println("s1 area is "+gu.calculateArea(bldg1Shape));
+		System.out.println("s2 area is "+gu.calculateArea(bldg2Shape));
+	
+	}
+	
+	@Test
+	void testHausdorffSimilarityIdenticalButDifferentBuildings() throws Exception {
+		TamrGeoUtils gu = new TamrGeoUtils();
+		String bldg1JsonString = readFile("identicalBuildingCentroid1.json");
+		Shape bldg1Shape = gu.fromGeoJson(bldg1JsonString);
+		String bldg2JsonString = readFile("identicalBuildingCentroid2.json");
+		Shape bldg2Shape = gu.fromGeoJson(bldg2JsonString);
+		double hausdorffSimilarity= gu.getHausdorffSimilarity(bldg1Shape, bldg2Shape);
+		assertTrue(hausdorffSimilarity == 0.0);
+	}
 
 	static String readFile(final String fileName) throws IOException {
 		final String path = String.format("%s/%s", GEOJSON_DIR, fileName);
