@@ -2,5 +2,6 @@ build/*
 bin/*
 .gradle/*
 .settings/*
+doc/*
 .project
 .settings
