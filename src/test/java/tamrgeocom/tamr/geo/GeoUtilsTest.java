@@ -48,7 +48,6 @@ class GeoUtilsTest {
 		Shape s = gu.fromGeoJson(geoString);
 		double area = gu.calculateArea(s);
 		double change = Math.abs((area - USGS_AREA_COLORADO))/USGS_AREA_COLORADO;
-		System.out.println("area of colorado: "+area+" percent diff vs USGS "+change);
 		assertTrue(change<ACCEPABLE_AREA_DEVIANCE);
 	}
 	
@@ -59,7 +58,6 @@ class GeoUtilsTest {
 		Shape s = gu.fromGeoJson(geoString);
 		double area = gu.calculateArea(s);
 		double change = Math.abs((area - ACTUAL_AREA_COLORADO_GEOTOOLS))/ACTUAL_AREA_COLORADO_GEOTOOLS;
-		System.out.println("area of colorado: "+area+" percent diff vs GeoTools "+change);
 		assertTrue(change<ACCEPABLE_AREA_DEVIANCE);
 	}
 	
