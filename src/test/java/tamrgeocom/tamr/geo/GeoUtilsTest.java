@@ -37,8 +37,20 @@ class GeoUtilsTest {
 	private double ACTUAL_HAUSDORFF_DISTANCE_BTWN_IDENTICAL_BUILDINGS = 0.62216;
 	private double ACTUAL_AREA_COLORADO_GEOTOOLS = 269660135805.06;
 	private double USGS_AREA_COLORADO = 269837000000.0;
+	private double USGS_AREA_TEXAS = 695662000000.0;
 	private double ACTUAL_INTERSECTION_AREA = 700.31;
 
+	
+	@Test
+	void testAreaTexas() throws Exception {
+		TamrGeoUtils gu = new TamrGeoUtils();
+		String geoString = readFile("texas.json");
+		Shape s = gu.fromGeoJson(geoString);
+		double area = gu.calculateArea(s);
+		double change = Math.abs((area - USGS_AREA_TEXAS))/USGS_AREA_TEXAS;
+		System.out.println("area of Texas calculated: "+area+" deviance: "+change);
+		assertTrue(change<ACCEPABLE_AREA_DEVIANCE);
+	}
 
 
 	@Test
