@@ -35,10 +35,33 @@ class GeoUtilsTest {
 	private double ACTUAL_DISTANCE_BTWN_HUMAN_ML_CENTROIDS = 3.815;
 	private double ACTUAL_DISTANCE_BTWN_IDENTICAL_BUILDING_CENTROIDS = 25.61;
 	private double ACTUAL_HAUSDORFF_DISTANCE_BTWN_IDENTICAL_BUILDINGS = 0.62216;
+	private double ACTUAL_AREA_COLORADO_GEOTOOLS = 269660135805.06;
+	private double USGS_AREA_COLORADO = 269837000000.0;
 	private double ACTUAL_INTERSECTION_AREA = 700.31;
 
 
 
+	@Test
+	void testAreaColoradoCourseUSGS() throws Exception {
+		TamrGeoUtils gu = new TamrGeoUtils();
+		String geoString = readFile("coloradoCourse.json");
+		Shape s = gu.fromGeoJson(geoString);
+		double area = gu.calculateArea(s);
+		double change = Math.abs((area - USGS_AREA_COLORADO))/USGS_AREA_COLORADO;
+		System.out.println("area of colorado: "+area+" percent diff vs USGS "+change);
+		assertTrue(change<ACCEPABLE_AREA_DEVIANCE);
+	}
+	
+	@Test
+	void testAreaColoradoCourseGeoTools() throws Exception {
+		TamrGeoUtils gu = new TamrGeoUtils();
+		String geoString = readFile("coloradoCourse.json");
+		Shape s = gu.fromGeoJson(geoString);
+		double area = gu.calculateArea(s);
+		double change = Math.abs((area - ACTUAL_AREA_COLORADO_GEOTOOLS))/ACTUAL_AREA_COLORADO_GEOTOOLS;
+		System.out.println("area of colorado: "+area+" percent diff vs GeoTools "+change);
+		assertTrue(change<ACCEPABLE_AREA_DEVIANCE);
+	}
 	
 	@Test
 	void testAreaLargeWideAreaCrossingEquator() throws Exception {
@@ -282,8 +305,6 @@ class GeoUtilsTest {
 		
 		//there is no overlap here
 		Shape intersectionShape = gu.getIntersection(bldg1Shape, bldg2Shape);
-		System.out.println("empty intersection geojson is "+gu.toGeoJson(intersectionShape));
-		System.out.println("empty intersection hasArea "+intersectionShape.hasArea());
 
 		assertTrue(gu.calculateArea(intersectionShape) == 0.0);
 		
