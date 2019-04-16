@@ -193,7 +193,7 @@ public class TamrGeoUtils {
 		Geometry transformedGeo = translationInstance.transform(srcGeo);
 		Shape resultShape = ((JtsShapeFactory)scFactory.makeShapeFactory(ctx)).makeShape(transformedGeo);
 		return resultShape;
-			
+		
 	}
 	
 	/**

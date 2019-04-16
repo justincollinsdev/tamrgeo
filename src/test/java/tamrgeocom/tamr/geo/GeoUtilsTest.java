@@ -41,6 +41,9 @@ class GeoUtilsTest {
 	private double ACTUAL_INTERSECTION_AREA = 700.31;
 
 	
+	
+	
+	
 	@Test
 	void testAreaTexas() throws Exception {
 		TamrGeoUtils gu = new TamrGeoUtils();
@@ -134,6 +137,17 @@ class GeoUtilsTest {
 		assertTrue(gu.polygonContainsPoint(s, polygonCentroid));
 	}
 	
+	//this is valuable because it is both a multipolygon AND crosses the dateline
+	@Test
+	void testCentroidAlaska() throws Exception {
+		TamrGeoUtils gu = new TamrGeoUtils();
+		String geoString = readFile("alaska.json");
+		Shape s = gu.fromGeoJson(geoString);
+		Point polygonCentroid = gu.getCentroid(s);
+		System.out.println("alaska centroid "+gu.toGeoJson(polygonCentroid));
+		assertTrue(gu.polygonContainsPoint(s, polygonCentroid));
+	}
+	
 	@Test
 	void testDistanceBetweenHumanAndMLCentroids() throws Exception {
 		TamrGeoUtils gu = new TamrGeoUtils();
@@ -181,6 +195,7 @@ class GeoUtilsTest {
 		Point lineCentroid = gu.getCentroid(lineBetweenCentroids);
 		double dist1 = gu.calculateDistance(bldg1Centroid, lineCentroid);
 		double dist2 = gu.calculateDistance(lineCentroid, bldg2Centroid);
+		System.out.println("line is "+gu.toGeoJson(lineBetweenCentroids));
 		
 		//There is always going to be a very small amount of 'slop' here, this test validates it to .1 mm
 		//which is way beyond the actual capabilities of any real world data collection device.  Actual 
@@ -193,7 +208,6 @@ class GeoUtilsTest {
 		TamrGeoUtils gu = new TamrGeoUtils();
 		String bldg1JsonString = readFile("identicalBuilding1.json");
 		Shape bldg1Shape = gu.fromGeoJson(bldg1JsonString);
-		Point bldg1Centroid = gu.getCentroid(bldg1Shape);
 
 		String bldg1CentoidJsonString = readFile("identicalBuildingCentroid1.json");
 		Shape bldg1CentroidShape = gu.fromGeoJson(bldg1CentoidJsonString);
@@ -231,6 +245,7 @@ class GeoUtilsTest {
 		String geoString = readFile("exaggeratedUShapedBuilding.json");
 		Shape s = gu.fromGeoJson(geoString);
 		Point polygonCentroid = gu.getCentroid(s);
+		System.out.println("exaggeratedUShaped is "+gu.toGeoJson(polygonCentroid));
 		assertFalse(gu.polygonContainsPoint(s, polygonCentroid));
 	}
 
@@ -285,8 +300,8 @@ class GeoUtilsTest {
 		assertTrue(change<(ACCEPABLE_AREA_DEVIANCE*2));
 		
 	
-		//Shape s = gu.getIntersection(bldg1Shape, bldg2Shape);
-		//System.out.println("intersection geojson is "+gu.toGeoJson(s));
+		Shape s = gu.getIntersection(bldg1Shape, bldg2Shape);
+		System.out.println("intersection geojson is "+gu.toGeoJson(s));
 	}
 	
 	@Test
@@ -344,7 +359,10 @@ class GeoUtilsTest {
 		Shape bldg1Shape = gu.fromGeoJson(bldg1JsonString);
 		
 		
-		//Shape intersectionShape = gu.getIntersection(bldg1Shape, lineBetweenCentroids);
+		Shape intersectionShape = gu.getIntersection(bldg1Shape, lineBetweenCentroids);
+		System.out.println("full line is "+gu.toGeoJson(lineBetweenCentroids));
+
+		System.out.println("intersection line is "+gu.toGeoJson(intersectionShape));
 		double intersectArea = gu.getIntersectionArea(bldg1Shape, lineBetweenCentroids);
 		//Lines have no area, so the intersection area is 0.0
 		assertTrue(intersectArea == 0.0);
@@ -392,7 +410,7 @@ class GeoUtilsTest {
 		String bldg2JsonString = readFile("identicalBuildingCentroid2.json");
 		Shape bldg2Shape = gu.fromGeoJson(bldg2JsonString);
 		Shape relocatedShape = gu.relocate(bldg1Shape, bldg2Shape);
-
+		
 		//the only case where these will be TRUELY identical is for points, no rounding error there
 		assertTrue(gu.getCentroid(relocatedShape).equals(gu.getCentroid(bldg2Shape)));
 	}
@@ -408,6 +426,8 @@ class GeoUtilsTest {
 		String bldg2JsonString = readFile("uShapedMLGeneratedBuilding.json");
 		Shape bldg2Shape = gu.fromGeoJson(bldg2JsonString);
 		Shape relocatedShape = gu.relocate(bldg1Shape, bldg2Shape);
+		
+		System.out.println("relocated shape is "+gu.toGeoJson(relocatedShape));
 
 		assertTrue(gu.calculateDistance(gu.getCentroid(relocatedShape), gu.getCentroid(bldg2Shape)) < ACCEPTABLE_LENGTH_DEVIANCE);
 	}
