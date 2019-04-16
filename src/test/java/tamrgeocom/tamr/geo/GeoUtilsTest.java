@@ -154,6 +154,7 @@ class GeoUtilsTest {
 		String bldg1JsonString = readFile("uShapedMLGeneratedBuilding.json");
 		Shape bldg1CentroidShape = gu.fromGeoJson(bldg1JsonString);
 		Point bldg1Centroid = gu.getCentroid(bldg1CentroidShape);
+		System.out.println("ushaped building centroid: "+gu.toGeoJson(bldg1Centroid));
 		String bldg2JsonString = readFile("uShapedHumanGeneratedBuilding.json");
 		Shape bldg2CentroidShape = gu.fromGeoJson(bldg2JsonString);
 		Point bldg2Centroid = gu.getCentroid(bldg2CentroidShape);
