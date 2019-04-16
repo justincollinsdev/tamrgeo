@@ -44,7 +44,7 @@ This is human generated geometries for two nearly identical nearby buildings wit
 
 
 
-![some more text](https://github.com/justincollinsdev/tamrgeo/blob/master/img/identicalbuildingswithcentroids.png?raw=true =250x)
+![some more text](https://github.com/justincollinsdev/tamrgeo/blob/master/img/identicalbuildingswithcentroids.png?raw=true)
 
 
 ---
