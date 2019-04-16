@@ -170,7 +170,7 @@ Calculate the Shape of the area of intersection between the two specified polygo
 
 | Poly 1 (Human) | Poly 2 (ML) | Result |
 |--|--|--|
-|  ![Human](https://github.com/justincollinsdev/tamrgeo/blob/master/img/ushapedHuman.png?raw=true =250x)|  ![ML](https://github.com/justincollinsdev/tamrgeo/blob/master/img/ushapedML.png?raw=true =250x)|![Intersection](https://github.com/justincollinsdev/tamrgeo/blob/master/img/ushapedintersection.png?raw=true =250x)
+|  ![Human](https://github.com/justincollinsdev/tamrgeo/blob/master/img/ushapedHuman.png?raw=true =250x)|  ![ML](https://github.com/justincollinsdev/tamrgeo/blob/master/img/ushapedML.png?raw=true =250x)|![Intersection](https://github.com/justincollinsdev/tamrgeo/blob/master/img/ushapedintersection.png?raw=true =250x)|
 The dark shaded portion of the result image is the Shape that will be returned by this operation.
 
 
