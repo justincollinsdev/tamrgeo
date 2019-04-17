@@ -51,7 +51,6 @@ class GeoUtilsTest {
 		Shape s = gu.fromGeoJson(geoString);
 		double area = gu.calculateArea(s);
 		double change = Math.abs((area - USGS_AREA_TEXAS))/USGS_AREA_TEXAS;
-		System.out.println("area of Texas calculated: "+area+" deviance: "+change);
 		assertTrue(change<ACCEPABLE_AREA_DEVIANCE);
 	}
 
@@ -144,7 +143,6 @@ class GeoUtilsTest {
 		String geoString = readFile("alaska.json");
 		Shape s = gu.fromGeoJson(geoString);
 		Point polygonCentroid = gu.getCentroid(s);
-		System.out.println("alaska centroid "+gu.toGeoJson(polygonCentroid));
 		assertTrue(gu.polygonContainsPoint(s, polygonCentroid));
 	}
 	
@@ -195,7 +193,6 @@ class GeoUtilsTest {
 		Point lineCentroid = gu.getCentroid(lineBetweenCentroids);
 		double dist1 = gu.calculateDistance(bldg1Centroid, lineCentroid);
 		double dist2 = gu.calculateDistance(lineCentroid, bldg2Centroid);
-		System.out.println("line is "+gu.toGeoJson(lineBetweenCentroids));
 		
 		//There is always going to be a very small amount of 'slop' here, this test validates it to .1 mm
 		//which is way beyond the actual capabilities of any real world data collection device.  Actual 
@@ -245,7 +242,6 @@ class GeoUtilsTest {
 		String geoString = readFile("exaggeratedUShapedBuilding.json");
 		Shape s = gu.fromGeoJson(geoString);
 		Point polygonCentroid = gu.getCentroid(s);
-		System.out.println("exaggeratedUShaped is "+gu.toGeoJson(polygonCentroid));
 		assertFalse(gu.polygonContainsPoint(s, polygonCentroid));
 	}
 
@@ -381,9 +377,7 @@ class GeoUtilsTest {
 		
 		
 		Shape intersectionShape = gu.getIntersection(bldg1Shape, lineBetweenCentroids);
-		System.out.println("full line is "+gu.toGeoJson(lineBetweenCentroids));
 
-		System.out.println("intersection line is "+gu.toGeoJson(intersectionShape));
 		double intersectArea = gu.getIntersectionArea(bldg1Shape, lineBetweenCentroids);
 		//Lines have no area, so the intersection area is 0.0
 		assertTrue(intersectArea == 0.0);

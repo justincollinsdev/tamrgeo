@@ -209,7 +209,11 @@ Continuing with the U shaped building from above
 
 
 To compare the resulting shapes we can view only the overlapping areas
-| Intersection Before reposition | Intersection After reposition |
-|--|--|--|
-| <img src="https://github.com/justincollinsdev/tamrgeo/blob/master/img/ushapedintersection.png?raw=true" alt="Human" height="250"/>| <img src="https://github.com/justincollinsdev/tamrgeo/blob/master/img/relocatedintersectionshape.png?raw=true" alt="ML" height="250"/> | 
 
+| Intersection Before reposition | Intersection After reposition |
+|--|--|
+| <img src="https://github.com/justincollinsdev/tamrgeo/blob/master/img/originalintersectionshape.png?raw=true" alt="Human" height="250"/>| <img src="https://github.com/justincollinsdev/tamrgeo/blob/master/img/relocatedintersectionshape.png?raw=true" alt="ML" height="250"/> |  
+|intersection area: 697.200|intersection area: 816.729|
+|Hausdorff similarity: 0.925|Hausdorff similarity: 0.968|
+
+Visually it's clear that the intersection is larger after repositioning, and the numbers confirm this.  
