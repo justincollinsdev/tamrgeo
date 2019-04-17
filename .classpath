@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry output="bin/main" kind="src" path="src/main/java">
 		<attributes>
 			<attribute name="gradle_scope" value="main"/>
@@ -18,7 +19,6 @@
 			<attribute name="gradle_used_by_scope" value="test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
 	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.locationtech.spatial4j/spatial4j/0.6/b24a8c55cd6244481bbd8c014bc95886d1f053a9/spatial4j-0.6-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.locationtech.spatial4j/spatial4j/0.6/21b15310bddcfd8c72611c180f20cf23279809a3/spatial4j-0.6.jar">
 		<attributes>
@@ -50,6 +50,18 @@
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.noggit/noggit/0.8/5b56cc7f36ee1d2e2a6a50eabb1e32ff3ec2aca1/noggit-0.8-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.noggit/noggit/0.8/ba4ad65a62d7dfcf97a8d42c82ae7d8824f9087f/noggit-0.8.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/com.vividsolutions/jts/1.13/ee922fa0a39de08d193337739d336779e3dfa774/jts-1.13-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/com.vividsolutions/jts/1.13/3ccfb9b60f04d71add996a666ceb8902904fd805/jts-1.13.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
 	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.4.0/44fdbe60e0df90028edf59d9ffdf06d9fc0e43d9/junit-platform-engine-1.4.0-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.4.0/b4419dc190a5d82b9cac6b52e0af9140895c3f87/junit-platform-engine-1.4.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
@@ -71,18 +83,6 @@
 	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.1.1/88a3a2cb15c413565462cea99f201b67bc6d2f10/opentest4j-1.1.1-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.1.1/efd9f971e91074491ea55b19f67b13470cf4fcdd/opentest4j-1.1.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/org.noggit/noggit/0.8/5b56cc7f36ee1d2e2a6a50eabb1e32ff3ec2aca1/noggit-0.8-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/org.noggit/noggit/0.8/ba4ad65a62d7dfcf97a8d42c82ae7d8824f9087f/noggit-0.8.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="test"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="/Users/dev/.gradle/caches/modules-2/files-2.1/com.vividsolutions/jts/1.13/ee922fa0a39de08d193337739d336779e3dfa774/jts-1.13-sources.jar" kind="lib" path="/Users/dev/.gradle/caches/modules-2/files-2.1/com.vividsolutions/jts/1.13/3ccfb9b60f04d71add996a666ceb8902904fd805/jts-1.13.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="test"/>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>

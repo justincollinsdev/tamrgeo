@@ -297,8 +297,6 @@ class GeoUtilsTest {
 		
 	
 		Shape s = gu.getIntersection(bldg1Shape, bldg2Shape);
-		System.out.println("intersection geojson is "+gu.toGeoJson(s));
-		System.out.println("intersection area is "+intersectArea+", hausdorff is "+gu.getHausdorffSimilarity(bldg2Shape, bldg1Shape));
 	}
 	
 	@Test
@@ -317,8 +315,6 @@ class GeoUtilsTest {
 		assertTrue(intersectArea>ACTUAL_INTERSECTION_AREA);
 		
 		Shape s = gu.getIntersection(bldg1Shape, bldg2Shape);
-		System.out.println("relocated intersection geojson is "+gu.toGeoJson(s));
-		System.out.println("relocated intersection area is "+intersectArea+", hausdorff is "+gu.getHausdorffSimilarity(bldg2Shape, bldg1Shape));
 	}
 	
 	@Test
@@ -441,8 +437,6 @@ class GeoUtilsTest {
 		String bldg2JsonString = readFile("uShapedMLGeneratedBuilding.json");
 		Shape bldg2Shape = gu.fromGeoJson(bldg2JsonString);
 		Shape relocatedShape = gu.relocate(bldg1Shape, bldg2Shape);
-		
-		System.out.println("relocated shape is "+gu.toGeoJson(relocatedShape));
 
 		assertTrue(gu.calculateDistance(gu.getCentroid(relocatedShape), gu.getCentroid(bldg2Shape)) < ACCEPTABLE_LENGTH_DEVIANCE);
 	}

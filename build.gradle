@@ -26,8 +26,8 @@ dependencies {
     compile('com.google.guava:guava:16.0.1')
     compile('org.junit.jupiter:junit-jupiter-engine:5.4.0')
     compile('org.assertj:assertj-core:3.12.2')
-    testRuntime('org.noggit:noggit:0.8')
-    testRuntime('com.vividsolutions:jts:1.13')
+    compile('org.noggit:noggit:0.8')
+    compile('com.vividsolutions:jts:1.13')
 }
 test {
     useJUnitPlatform()

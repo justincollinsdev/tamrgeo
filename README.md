@@ -208,6 +208,7 @@ Continuing with the U shaped building from above
 | <img src="https://github.com/justincollinsdev/tamrgeo/blob/master/img/relocatedHumanUshaped.png?raw=true" alt="Human" height="250"/>| <img src="https://github.com/justincollinsdev/tamrgeo/blob/master/img/ushapedML.png?raw=true" alt="ML" height="250"/> | <img src="https://github.com/justincollinsdev/tamrgeo/blob/master/img/relocatedintersection.png?raw=true" alt="Intersection" height="250"/> |
 
 
+
 To compare the resulting shapes we can view only the overlapping areas
 
 | Intersection Before reposition | Intersection After reposition |
