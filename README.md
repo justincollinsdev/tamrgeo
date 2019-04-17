@@ -203,7 +203,13 @@ Continuing with the U shaped building from above
     bldg1Shape = gu.relocate(bldg1Shape, bldg2Shape);
 ```
 
-| Poly 1 (Human) | Poly 2 (ML) | Result |
+| Relocated Human | Original ML | Result |
 |--|--|--|
 | <img src="https://github.com/justincollinsdev/tamrgeo/blob/master/img/relocatedHumanUshaped.png?raw=true" alt="Human" height="250"/>| <img src="https://github.com/justincollinsdev/tamrgeo/blob/master/img/ushapedML.png?raw=true" alt="ML" height="250"/> | <img src="https://github.com/justincollinsdev/tamrgeo/blob/master/img/relocatedintersection.png?raw=true" alt="Intersection" height="250"/> |
+
+
+To compare the resulting shapes we can view only the overlapping areas
+| Intersection Before reposition | Intersection After reposition |
+|--|--|--|
+| <img src="https://github.com/justincollinsdev/tamrgeo/blob/master/img/ushapedintersection.png?raw=true" alt="Human" height="250"/>| <img src="https://github.com/justincollinsdev/tamrgeo/blob/master/img/relocatedintersectionshape.png?raw=true" alt="ML" height="250"/> | 
 
