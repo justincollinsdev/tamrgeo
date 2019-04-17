@@ -165,6 +165,8 @@ Reposition the source object so that the centroid is in the same location as the
 |--|--|--|
 | <img src="https://github.com/justincollinsdev/tamrgeo/blob/master/img/ushapedHuman.png?raw=true" alt="Human" height="250"/>| <img src="https://github.com/justincollinsdev/tamrgeo/blob/master/img/ushapedML.png?raw=true" alt="ML" height="250"/> | <img src="https://github.com/justincollinsdev/tamrgeo/blob/master/img/relocatedHumanUshaped.png?raw=true" alt="relocated" height="250"/> |
 
+Note that the result maintains the shape of the Source Shape but has moved East so that the centroid of the Source is now in the same location as the centroid of the Destination Shape.
+
 
   
 #### Intersection Shape

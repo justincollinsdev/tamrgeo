@@ -154,7 +154,6 @@ class GeoUtilsTest {
 		String bldg1JsonString = readFile("uShapedMLGeneratedBuilding.json");
 		Shape bldg1CentroidShape = gu.fromGeoJson(bldg1JsonString);
 		Point bldg1Centroid = gu.getCentroid(bldg1CentroidShape);
-		System.out.println("ushaped building centroid: "+gu.toGeoJson(bldg1Centroid));
 		String bldg2JsonString = readFile("uShapedHumanGeneratedBuilding.json");
 		Shape bldg2CentroidShape = gu.fromGeoJson(bldg2JsonString);
 		Point bldg2Centroid = gu.getCentroid(bldg2CentroidShape);
@@ -303,6 +302,27 @@ class GeoUtilsTest {
 	
 		Shape s = gu.getIntersection(bldg1Shape, bldg2Shape);
 		System.out.println("intersection geojson is "+gu.toGeoJson(s));
+		System.out.println("intersection area is "+intersectArea+", hausdorff is "+gu.getHausdorffSimilarity(bldg2Shape, bldg1Shape));
+	}
+	
+	@Test
+	void testRelocationAndIntersectionArea() throws Exception {
+		TamrGeoUtils gu = new TamrGeoUtils();
+		String bldg1JsonString = readFile("uShapedHumanGeneratedBuilding.json");
+		Shape bldg1Shape = gu.fromGeoJson(bldg1JsonString);
+		String bldg2JsonString = readFile("uShapedMLGeneratedBuilding.json");
+		Shape bldg2Shape = gu.fromGeoJson(bldg2JsonString);
+		//now relocate bldg1 to bldg2s location and run the same tests...
+		bldg1Shape = gu.relocate(bldg1Shape, bldg2Shape);
+		
+		double intersectArea = gu.getIntersectionArea(bldg1Shape, bldg2Shape);
+
+		//repositioned intersection is larger than original intersection:
+		assertTrue(intersectArea>ACTUAL_INTERSECTION_AREA);
+		
+		Shape s = gu.getIntersection(bldg1Shape, bldg2Shape);
+		System.out.println("relocated intersection geojson is "+gu.toGeoJson(s));
+		System.out.println("relocated intersection area is "+intersectArea+", hausdorff is "+gu.getHausdorffSimilarity(bldg2Shape, bldg1Shape));
 	}
 	
 	@Test
