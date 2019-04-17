@@ -188,5 +188,22 @@ Measures the degree of similarity between two Shapes using the [Hausdorff](https
 
 
   
+#### Combining intersection, relocation, area and Hausdorff
+Relocation can be used in combination with the intersection, area and Hausdorff operations to establish similarity between shapes without regard for their location.  Be careful with this, depending on your use case it can be deceptive to try to establish that two shapes are the 'same' real world object once you've moved them around.
 
+Continuing with the U shaped building from above
+
+```
+    TamrGeoUtils gu = new TamrGeoUtils();
+    String bldg1JsonString = readFile("uShapedHumanGeneratedBuilding.json");
+    Shape bldg1Shape = gu.fromGeoJson(bldg1JsonString);
+    String bldg2JsonString = readFile("uShapedMLGeneratedBuilding.json");
+    Shape bldg2Shape = gu.fromGeoJson(bldg2JsonString);
+		
+    bldg1Shape = gu.relocate(bldg1Shape, bldg2Shape);
+```
+
+| Poly 1 (Human) | Poly 2 (ML) | Result |
+|--|--|--|
+| <img src="https://github.com/justincollinsdev/tamrgeo/blob/master/img/relocatedHumanUshaped.png?raw=true" alt="Human" height="250"/>| <img src="https://github.com/justincollinsdev/tamrgeo/blob/master/img/ushapedML.png?raw=true" alt="ML" height="250"/> | <img src="https://github.com/justincollinsdev/tamrgeo/blob/master/img/relocatedintersection.png?raw=true" alt="Intersection" height="250"/> |
 
